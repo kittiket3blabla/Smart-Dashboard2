@@ -1,0 +1,23 @@
+/* Цвета для темной темы (твоя текущая) */
+:root {
+  --bg-color: #12192b;
+  --card-bg: #1e263d;
+  --text-main: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent-color: #2563eb;
+  --input-bg: #1a202c;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --nav-bg: #12192b;
+}
+
+/* Цвета для светлой темы */
+[data-theme="light"] {
+  --bg-color: #f4f7fa;
+  --card-bg: #ffffff;
+  --text-main: #1a202c;
+  --text-secondary: #718096;
+  --accent-color: #3182ce;
+  --input-bg: #edf2f7;
+  --border-color: #e2e8f0;
+  --nav-bg: #ffffff;
+}

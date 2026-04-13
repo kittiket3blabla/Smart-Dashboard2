@@ -1,12 +1,9 @@
-.notes-container { max-width: 800px; margin: 0 auto; }
-.notes-header { color: #ffb74d; margin-bottom: 20px; }
-.notes-form { display: flex; flex-direction: column; gap: 10px; background: #1e1e1e; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
-.notes-input { padding: 12px; border-radius: 8px; border: 1px solid #444; background: #2c2c2c; color: #fff; font-size: 1rem; }
-.notes-add-btn { background: #ffb74d; color: #000; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1rem; }
-.notes-add-btn:hover { background: #f57c00; }
-.notes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-.note-card { background: #fff8e1; color: #212121; padding: 20px; border-radius: 12px; position: relative; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-.note-title { margin: 0 0 10px 0; font-size: 1.2rem; border-bottom: 2px solid #ffe082; padding-bottom: 5px; }
-.note-content { margin: 0 0 30px 0; line-height: 1.5; font-size: 0.95rem; }
-.note-del-btn { position: absolute; bottom: 15px; right: 15px; background: #e53935; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-.note-del-btn:hover { background: #b71c1c; }
+.notes-container { max-width: 500px; margin: 0 auto; }
+.notes-header { font-size: 20px; font-weight: 800; margin-bottom: 20px; color: var(--text-main); }
+.notes-form { display: flex; flex-direction: column; gap: 10px; background: var(--card-bg); padding: 20px; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 4px 10px var(--shadow); }
+.notes-input { padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); background: var(--input-bg); color: var(--text-main); font-family: 'Nunito'; font-size: 15px; outline:none; }
+.notes-add-btn { background: var(--accent-color); color: #fff; border: none; padding: 12px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 15px; }
+.note-card { background: var(--card-bg); padding: 20px; border-radius: 16px; position: relative; display: flex; flex-direction: column; box-shadow: 0 4px 10px var(--shadow); border-left: 4px solid var(--accent-color); }
+.note-title { margin: 0 0 10px 0; font-size: 18px; font-weight: 800; color: var(--text-main); }
+.note-content { margin: 0 0 10px 0; line-height: 1.5; font-size: 14px; color: var(--text-secondary); }
+.note-del-btn { align-self: flex-end; background: var(--input-bg); color: var(--btn-danger); border: none; padding: 6px 12px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 12px; }

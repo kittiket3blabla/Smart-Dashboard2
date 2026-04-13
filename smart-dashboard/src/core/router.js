@@ -8,7 +8,9 @@ export function initRouter() {
   routes = {
     "/tasks": () => import("../modules/tasks/tasksUI.js").then(m => (m.renderTasksUI || m.default)()),
     "/notes": () => import("../modules/notes/notesUI.js").then(m => (m.renderNotesUI || m.default)()),
-    "/tracker": () => import("../modules/tracker/trackerUI.js").then(m => (m.renderTrackerUI || m.default)())
+    "/tracker": () => import("../modules/tracker/trackerUI.js").then(m => (m.renderTrackerUI || m.default)()),
+    // ДОБАВИЛИ ПРОФИЛЬ СЮДА:
+    "/profile": () => import("../modules/profile/profileUI.js").then(m => (m.renderProfileUI || m.default)())
   };
 
   // Слушаем изменение хеша в URL

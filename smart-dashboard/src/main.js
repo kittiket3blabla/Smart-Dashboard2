@@ -1,6 +1,12 @@
 import { initRouter } from "./core/router.js";
 import { initUI } from "./core/uiContainer.js";
 import { authService } from "./core/authService.js";
+document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "dark");
+// Инициализация темы при загрузке
+(function initTheme() {
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+})();
 
 // Выставляем функции в глобальную область (для консоли)
 window.registerUser = async (email, password) => {
